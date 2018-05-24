@@ -29,10 +29,12 @@
             "end": "1973"
         }
     }
-    const HTMLRepresentation = `<h1>The Mod Squad</h1>`
+    let HTMLRepresentation = `<h1>The Mod Squad</h1>`
 
-    document.querySelector(".show-info").innerHTML = HTMLRepresentation
     ModSquad.members.forEach((member) => {
-        let HTMLRepresentation = `<div>${member}</div>`
-    });
+         HTMLRepresentation += `<div>${member}</div>`
+
+    });  
+      document.querySelector(".show-info").innerHTML = HTMLRepresentation
+
 }
