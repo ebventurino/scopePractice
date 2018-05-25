@@ -41,19 +41,38 @@
 //                    Challenge 4
 
 
-let locations = [[1,1], [1,2], [1,3], [2,1], [2,2], [2,3]]
+// let locations = [[1,1], [1,2], [1,3], [2,1], [2,2], [2,3]]
 
-for (let k = 0; k < locations.length; k++) {
-    const currentLocation = locations[k] 
-    if (currentLocation[0] > 2) {
-        const invalidLocation = true
-        if (invalidLocation) {
-            console.log("This location is invalid")}
-            if (invalidLocation) {
+// for (let k = 0; k < locations.length; k++) {
+//     const currentLocation = locations[k] 
+//     if (currentLocation[0] > 2) {
+//         const invalidLocation = true
+//         if (invalidLocation) {
+//             console.log("This location is invalid")}
+//             if (invalidLocation) {
     
-            }
-    }console.log("This location is invalid")
-    console.log(`There were ${locations} locations displayed`)
+//             }
+//     }console.log("This location is invalid")
+//     console.log(`There were ${locations} locations displayed`)
 
-}
+// }
+
+//                    Challenge 5
+
+
+    
+        
+    
+        let llamaNamer = function () {
+            let possibleNames = ["Larry", "Leon", "Leona", "Les", "Laura", "Lemony", "Lars", "Lekisha"]
+            let randomizer = Math.floor(Math.random() * 7)
+            const suffix = " the Llama"
+            let name = possibleNames[randomizer]
+
+        return name + suffix
+    }
+
+    let nameMaker = llamaNamer()
+    console.log(nameMaker)
+    console.log("hello")
 
